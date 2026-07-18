@@ -1,0 +1,126 @@
+.code{
+    background-color: rgba(164, 135, 193, 0.2);
+    text-align: center;
+    padding: 10px;
+    border-radius: 100px;
+    
+}
+.code h1{
+   color:black;
+   position: relative;
+      left: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+.code p{
+color: black;
+position: relative;
+left: 20px;
+bottom:10px ;
+font-weight: 100;
+
+}
+body{
+    background-color:white;
+    margin: 20;
+    padding: 0;
+}
+
+.code2{
+    background-color: rgba(164, 135, 193, 0.2);
+    position:relative;
+       left: 100px;
+       padding: 10 px;
+       border-radius: 50px;
+       height: 200px;
+       width: 500px;
+
+}
+.code2 h3{
+    text-align: center;
+    position: relative;
+    left: 10px;
+    color:black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      
+}
+.code2 p{
+    position: relative;
+    left: 30px;
+    color: black;
+    font-weight: 100;
+}
+
+.code3{
+    position: relative;
+    left: 750px;
+    bottom: 215px;
+}
+.code3 h3{
+    position: absolute;
+    top: 20px;
+    left: 50px; 
+  color:black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.java{
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    height: 70px;
+    width: 70px;
+
+    
+}
+.html{
+    position: absolute;
+    top: 80px;
+    left: 120px;
+    height: 70px;
+    width: 70px;
+
+
+} 
+.css2{
+    position: absolute;
+      top:80px;
+    left: 220px;
+    height: 70px;
+    width: 70px;
+
+   
+}
+.next{
+ background-color: rgba(164, 135, 193, 0.2);
+        position: relative;
+          top: 30px;
+          left: 390px;
+          width: 500px;
+          height: 200px;
+          border-radius: 50px;
+ 
+}
+.next h3{
+    text-align: center;
+    position: relative;
+    top: 10px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.next p{
+         position: relative;
+        top: 10px;
+        text-align: center;
+        font-weight: 100;
+}
+.next button{
+        position: relative;
+        left: 180px;
+        top: 20px;
+      background-color: white;
+          
+}
+.next button:hover{
+    color: rgb(118, 80, 154);
+
+}
