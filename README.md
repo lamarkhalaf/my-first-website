@@ -10,4 +10,4 @@ https://lamarkhalaf.github.io/my-first-website/
 - CSS
 
 ## Author
-Lamar Khalaf
+Lamar Alahmari
