@@ -1,126 +1,177 @@
-.code{
-    background-color: rgba(164, 135, 193, 0.2);
-    text-align: center;
-    padding: 10px;
-    border-radius: 100px;
-    
-}
-.code h1{
-   color:black;
-   position: relative;
-      left: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-
-}
-.code p{
-color: black;
-position: relative;
-left: 20px;
-bottom:10px ;
-font-weight: 100;
-
-}
-body{
-    background-color:white;
-    margin: 20;
+* {
+    box-sizing: border-box;
+    margin: 0;
     padding: 0;
 }
 
-.code2{
-    background-color: rgba(164, 135, 193, 0.2);
-    position:relative;
-       left: 100px;
-       padding: 10 px;
-       border-radius: 50px;
-       height: 200px;
-       width: 500px;
-
+body {
+    background-color: #f2efea;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: #2b2d42;
+    line-height: 1.6;
+    padding: 40px 20px;
 }
-.code2 h3{
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.code {
+    background: linear-gradient(135deg, #2b3a4a, #1a232c);
+    color: #ffffff;
     text-align: center;
+    padding: 35px 25px;
+    border-radius: 24px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+}
+
+.code h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+.code p {
+    color: #cbd5e1;
+    font-size: 1.05rem;
+    font-weight: 300;
+}
+
+/* ===== شبكة البطاقات (About + Skills) ===== */
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+@media (max-width: 768px) {
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.code2 {
+    background-color: #e2e8f0; 
+    border-radius: 24px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cbd5e1;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.code2:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.code2 h3 {
+    font-size: 1.3rem;
+    color: #1e293b;
+    margin-bottom: 15px;
     position: relative;
-    left: 10px;
-    color:black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      
-}
-.code2 p{
-    position: relative;
-    left: 30px;
-    color: black;
-    font-weight: 100;
+    padding-bottom: 8px;
 }
 
-.code3{
-    position: relative;
-    left: 750px;
-    bottom: 215px;
-}
-.code3 h3{
+.code2 h3::after {
+    content: '';
     position: absolute;
-    top: 20px;
-    left: 50px; 
-  color:black;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background-color: #475569;
+    border-radius: 2px;
 }
-.java{
-    position: absolute;
-    top: 80px;
-    left: 20px;
-    height: 70px;
-    width: 70px;
 
-    
+.code2 p {
+    color: #334155;
+    font-size: 0.95rem;
+    text-align: justify;
 }
-.html{
-    position: absolute;
-    top: 80px;
-    left: 120px;
-    height: 70px;
-    width: 70px;
 
-
-} 
-.css2{
-    position: absolute;
-      top:80px;
-    left: 220px;
-    height: 70px;
-    width: 70px;
-
-   
-}
-.next{
- background-color: rgba(164, 135, 193, 0.2);
-        position: relative;
-          top: 30px;
-          left: 390px;
-          width: 500px;
-          height: 200px;
-          border-radius: 50px;
- 
-}
-.next h3{
+.code3 {
+    background-color: #eae7e1;
+    border-radius: 24px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    border: 1px solid #dcd7cf;
     text-align: center;
-    position: relative;
-    top: 10px;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.next p{
-         position: relative;
-        top: 10px;
-        text-align: center;
-        font-weight: 100;
-}
-.next button{
-        position: relative;
-        left: 180px;
-        top: 20px;
-      background-color: white;
-          
-}
-.next button:hover{
-    color: rgb(118, 80, 154);
 
+.code3:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.code3 h3 {
+    font-size: 1.3rem;
+    color: #1e293b;
+    margin-bottom: 25px;
+}
+
+.java, .html, .css2 {
+    position: static;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 8px;
+    background-color: #ffffff; 
+    border: 2px solid #cbd5e1;
+    margin: 0 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.java:hover, .html:hover, .css2:hover {
+    transform: scale(1.1);
+    border-color: #2b3a4a;
+}
+
+/* ===== قسم الخطوة القادمة ===== */
+.next {
+    background-color: #e0e7ff; /* أزرق هادئ ونحيف للتمييز */
+    border-radius: 24px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    border: 1px solid #c7d2fe;
+    text-align: center;
+}
+
+.next h3 {
+    font-size: 1.3rem;
+    color: #1e1b4b;
+    margin-bottom: 12px;
+}
+
+.next p {
+    color: #3730a3;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.next button {
+    background-color: #2b3a4a;
+    color: #ffffff;
+    border: none;
+    padding: 12px 28px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(43, 58, 74, 0.2);
+}
+
+.next button:hover {
+    background-color: #1a232c;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(43, 58, 74, 0.3);
 }
